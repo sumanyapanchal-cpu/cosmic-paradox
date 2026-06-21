@@ -1,0 +1,70 @@
+﻿/**
+ * Cosmic Paradox — Enterprise Dark Design Tokens
+ * Planet / Palantir / ArcGIS inspired. Not cyberpunk.
+ * Scoped variables only; legacy dashboard uses inline styles.
+ */
+
+:root {
+  --cp-bg-app: #0b0f14;
+  --cp-bg-surface: #141b24;
+  --cp-bg-elevated: #1c2632;
+  --cp-bg-overlay: rgba(11, 15, 20, 0.85);
+  --cp-border-subtle: #2a3544;
+  --cp-border-strong: #3d4f66;
+  --cp-text-primary: #e8edf2;
+  --cp-text-secondary: #8b9cb3;
+  --cp-text-muted: #5c6b7f;
+  --cp-text-inverse: #0b0f14;
+  --cp-accent-primary: #3b82f6;
+  --cp-accent-primary-hover: #2563eb;
+  --cp-brand-teal: #0d9488;
+  --cp-brand-teal-muted: rgba(13, 148, 136, 0.15);
+  --cp-severity-healthy: #22c55e;
+  --cp-severity-watch: #eab308;
+  --cp-severity-warning: #f97316;
+  --cp-severity-critical: #ef4444;
+  --cp-severity-healthy-bg: rgba(34, 197, 94, 0.12);
+  --cp-severity-watch-bg: rgba(234, 179, 8, 0.12);
+  --cp-severity-warning-bg: rgba(249, 115, 22, 0.12);
+  --cp-severity-critical-bg: rgba(239, 68, 68, 0.12);
+  --cp-map-dock-bg: rgba(20, 27, 36, 0.92);
+  --cp-floating-card-bg: rgba(28, 38, 50, 0.94);
+  --cp-floating-card-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --cp-font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --cp-font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --cp-text-xs: 0.6875rem;
+  --cp-text-sm: 0.8125rem;
+  --cp-text-base: 0.875rem;
+  --cp-text-lg: 1rem;
+  --cp-text-xl: 1.25rem;
+  --cp-text-2xl: 1.5rem;
+  --cp-space-1: 4px;
+  --cp-space-2: 8px;
+  --cp-space-3: 12px;
+  --cp-space-4: 16px;
+  --cp-space-5: 20px;
+  --cp-space-6: 24px;
+  --cp-space-8: 32px;
+  --cp-radius-sm: 6px;
+  --cp-radius-md: 8px;
+  --cp-radius-lg: 12px;
+  --cp-radius-xl: 16px;
+  --cp-duration-fast: 150ms;
+  --cp-duration-normal: 300ms;
+  --cp-duration-slow: 400ms;
+  --cp-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --cp-shell-sidebar-width: 220px;
+  --cp-shell-sidebar-collapsed: 64px;
+  --cp-shell-topbar-height: 56px;
+  --cp-floating-card-width: 320px;
+  --cp-map-dock-height: 56px;
+  --cp-timeline-height: 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --cp-duration-fast: 0ms;
+    --cp-duration-normal: 0ms;
+    --cp-duration-slow: 0ms;
+  }
+}
