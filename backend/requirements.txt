@@ -1,0 +1,39 @@
+# ─── Cosmic Paradox Backend — requirements.txt ───
+# Install: pip install -r requirements.txt
+
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+pydantic==2.10.3
+
+# ML — Classical
+scikit-learn==1.5.2
+xgboost==2.1.3
+joblib==1.4.2
+
+# ML — Deep Learning
+torch==2.5.1           # CPU build; for GPU: pip install torch --index-url https://download.pytorch.org/whl/cu121
+# tensorflow==2.17.0   # Alternative to PyTorch (uncomment if preferred)
+
+# Geospatial
+numpy==1.26.4
+pandas==2.2.3
+rasterio==1.3.11
+gdal==3.9.3            # If GDAL system library is pre-installed; else omit and use rasterio only
+shapely==2.0.6
+geopandas==1.0.1
+pyproj==3.7.0
+
+# Earth Engine
+earthengine-api==1.1.1
+
+# HTTP
+requests==2.32.3
+httpx==0.27.2
+
+# Utilities
+python-dotenv==1.0.1
+tqdm==4.67.1
+matplotlib==3.9.3      # For generating static maps / charts
+scipy==1.14.1

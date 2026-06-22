@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import MLDashboard from './components/MlDashboard';
 import StarField from "./components/StarField";
 import CursorGlow from "./components/CursorGlow";
 import CommandCenter from "./components/CommandCenter";
@@ -51,6 +52,8 @@ function App() {
 
       <Hero />
 
+
+
       <div
         style={{
           width: "90%",
@@ -58,10 +61,14 @@ function App() {
           margin: "0 auto"
         }}
       >
+      
+
+        
         <CommandCenter
           selectedZone={selectedZone}
           setSelectedZone={setSelectedZone}
         />
+        <MLDashboard />
 
         <StatsBar />
 
